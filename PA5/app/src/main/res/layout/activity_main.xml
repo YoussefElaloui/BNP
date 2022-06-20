@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        android:text="Poids :"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Donner votre poids ..."
+        android:textSize="25dp"
+        android:shadowColor="#F44336"
+        android:inputType="numberDecimal"
+        android:id="@+id/txt_poids"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        android:text="Taille :"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Donner votre taille ..."
+        android:textSize="25dp"
+        android:inputType="numberDecimal"
+        android:shadowColor="#F44336"
+        android:id="@+id/txt_taille"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rdg_unite">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metre"
+            android:textSize="20dp"
+            android:id="@+id/rd_metre"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimetre"
+            android:textSize="20dp"
+            android:id="@+id/rd_cm"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Afficher l'interpretation"
+        android:checked="true"
+        android:id="@+id/chb_afficher"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULER IMC"
+        android:id="@+id/btn_calculer"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAZ"
+        android:id="@+id/btn_rac"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultat\n :Vous devez cliquez sur le button Calculer Imc pour afficher le resultat."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:shadowColor="@color/purple_700"
+        android:id="@+id/res"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".updateProduct">
+
+    <TextView
+        style="@style/title"
+        android:text="Update Product"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choise your id :"
+            android:textSize="25sp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cmb"/>
+    </LinearLayout>
+    <EditText
+        style="@style/btn"
+        android:hint="Libelle"
+        android:id="@+id/txt_Updatedlibelle"/>
+    <EditText
+        style="@style/btn"
+        android:hint="Famille"
+        android:id="@+id/txt_Updatedfamille"/>
+    <EditText
+        style="@style/btn"
+        android:hint="Prix Achat"
+        android:id="@+id/txt_UpdatedprixAchat"/>
+    <EditText
+        style="@style/btn"
+        android:hint="Prix Vente"
+        android:id="@+id/txt_UpdatedprixVente"/>
+    <Button
+        style="@style/btn"
+        android:text="Modifier"
+        android:id="@+id/btn_updateProduct"/>
+</LinearLayout>

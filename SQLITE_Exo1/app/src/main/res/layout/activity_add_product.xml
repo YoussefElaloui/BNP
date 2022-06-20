@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+
+    <TextView
+        style="@style/title"
+        android:text="Nouveau Produit"/>
+    <EditText
+        style="@style/btn"
+        android:hint="Libelle"
+        android:id="@+id/txt_libelle"/>
+    <EditText
+        style="@style/btn"
+        android:hint="Famille"
+        android:id="@+id/txt_famille"/>
+    <EditText
+        style="@style/btn"
+        android:hint="Prix Achat"
+        android:id="@+id/txt_prixAchat"/>
+    <EditText
+        style="@style/btn"
+        android:hint="Prix Vente"
+        android:id="@+id/txt_prixVente"/>
+    <Button
+        style="@style/btn"
+        android:text="Ajouter"
+        android:id="@+id/btn_addProduit"/>
+
+</LinearLayout>

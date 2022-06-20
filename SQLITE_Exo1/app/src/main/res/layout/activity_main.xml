@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/title"
+        android:text="Menu Generale"/>
+    <Button
+        style="@style/btn"
+        android:text="Liste des Produits"
+        android:onClick="navigate"
+        android:id="@+id/btn_listPrds"/>
+    <Button
+        style="@style/btn"
+        android:text="Fiche Produit"
+        android:onClick="navigate"
+        android:id="@+id/btn_fichePrd"/>
+    <Button
+        style="@style/btn"
+        android:text="Nouveau Produit"
+        android:onClick="navigate"
+        android:id="@+id/btn_newPrd"/>
+    <Button
+        style="@style/btn"
+        android:text="Editer un Produit"
+        android:onClick="navigate"
+        android:id="@+id/btn_editPrd"/>
+
+</LinearLayout>

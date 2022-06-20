@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:textSize="35dp"
+        android:background="#8E24AA"
+        android:textColor="@color/white"
+        android:text="Calculateur de calories"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:background="#fdd835"
+        android:id="@+id/txt_poids"
+        android:hint="Saisir votre poids en Kg"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_poids"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textSize="25dp"
+        android:background="#fdd835"
+        android:id="@+id/txt_age"
+        android:hint="Saisir votre age en annee"/>
+
+    <EditText
+        android:id="@+id/txt_taille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_age"
+        android:background="#fdd835"
+        android:gravity="center_horizontal"
+        android:hint="Saisir votre taille en metre"
+        android:inputType="numberDecimal"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_taille"
+        android:text="Sexe"
+        android:id="@+id/lbl_sex"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rg_sex"
+        android:layout_below="@id/lbl_sex">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homme"
+            android:textSize="25sp"
+            android:id="@+id/rb_male"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femme"
+            android:textSize="25sp"
+            android:id="@+id/rb_female"
+            android:checked="true"/>
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_sex"
+        android:text="Niveau d'activite :"
+        android:id="@+id/lbl_level"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_level"
+        android:orientation="vertical"
+        android:id="@+id/rg_level">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Profil sedentaire"
+            android:checked="true"
+            android:id="@+id/rb_ps"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Profil legerement actif"
+            android:id="@+id/rb_pla"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Profil actif"
+            android:id="@+id/rb_pa"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Profil tres actif"
+            android:id="@+id/rb_pta"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_level"
+        android:layout_alignParentLeft="true"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:text="CALCULER"
+        android:id="@+id/btn_calculer"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_calculer"
+        android:layout_toRightOf="@id/btn_calculer"
+        android:textSize="25sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="INITILALIZER"
+        android:id="@+id/btn_initialisez"/>
+</RelativeLayout>

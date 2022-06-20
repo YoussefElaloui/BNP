@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SingleContact">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image1"
+        android:layout_weight="1"
+        android:id="@+id/pic_singleC"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name :"
+        android:textSize="30sp"
+        android:id="@+id/lbl_singleC_lastname"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name :"
+        android:textSize="30sp"
+        android:id="@+id/lbl_singleC_firstname"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textSize="30sp"
+        android:id="@+id/lbl_singleC_email"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telephone :"
+        android:textSize="30sp"
+        android:id="@+id/lbl_singleC_tele"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date :"
+        android:textSize="30sp"
+        android:id="@+id/lbl_singleC_date"/>
+
+</LinearLayout>

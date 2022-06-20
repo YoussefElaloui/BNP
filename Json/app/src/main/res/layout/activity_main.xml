@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom etablissement : xxxxx"
+        android:background="#303F9F"
+        android:textColor="#fff"
+        android:id="@+id/lbl_nom"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#303F9F"
+        android:padding="5dp"
+        android:id="@+id/lbl_adresse"
+        android:textColor="#fff"
+        android:text="Adresse etablissement : xxxxx"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tel etablissement : xxxxx"
+        android:background="#303F9F"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:id="@+id/lbl_tel"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liste des filieres : "
+        android:background="#E64A19"
+        android:textColor="#fff"
+        android:padding="2dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lst"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
